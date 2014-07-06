@@ -10,7 +10,7 @@ body {
   float: left;
   z-index: 0;
   width: 300%;
-  max-width: 1200px;
+  max-width: auto;
   height: auto;
   margin-top: -176px;
   overflow: visible;
