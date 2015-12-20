@@ -12,8 +12,10 @@ body {
     overflow: hidden; /* no scrolling around off the screen */
 }
 
+/* TODO: Buy a license for "Frontage" typeface and use that. */
 h1 {
-    font-family: "Frontage";
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
     font-size: 50px;
 }
 
@@ -49,7 +51,7 @@ a {
 
 .footer-nav a {
     text-align: center;
-    width: 33%;
+    width: 100%;
     float: left;
 }
 
