@@ -1,0 +1,63 @@
+html {
+    -webkit-font-smoothing: antialiased;
+    
+    background: url(img/bus.JPG) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    font-family: "Avenir";
+    overflow: hidden; /* no scrolling around off the screen */
+}
+
+h1 {
+    font-family: "Frontage";
+    font-size: 50px;
+}
+
+a {
+    color: white;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    text-decoration: none;
+}
+
+#big-name {
+    text-align: center;
+    line-height: 0.5;
+    color: white;
+        
+    /*  
+    Center it in the page based on the middle
+    of the text (not the top left corner):
+    */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer-nav {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    bottom:0px;
+    left: 0px;
+}
+
+.footer-nav a {
+    text-align: center;
+    width: 33%;
+    float: left;
+}
+
+.color-veil {
+    background-color: rgba(255, 100, 50, .6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
