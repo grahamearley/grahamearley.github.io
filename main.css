@@ -5,11 +5,15 @@ html {
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    
+    height: 100%;
+    min-height:100%;
 }
 
 body {
     font-family: "Avenir";
     overflow: hidden; /* no scrolling around off the screen */
+    min-height:100%;
 }
 
 /* TODO: Buy a license for "Frontage" typeface and use that. */
