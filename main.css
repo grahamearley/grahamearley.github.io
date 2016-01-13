@@ -1,8 +1,10 @@
 html {
     -webkit-font-smoothing: antialiased;
-    
+   
+/*    These will come in through javascript! :: */
 /*    background: url(img/laxmi.JPG) no-repeat center center fixed;*/
-    background: url(img/bus.JPG) no-repeat center center fixed;
+/*    background: url(img/bus.JPG) no-repeat center center fixed;*/
+    
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
@@ -61,7 +63,7 @@ a {
     width: 50%;
 }
 
-.color-veil {
+#color-veil {
 /*    Laxmi photo veil color: */
 /*    background-color: rgba(100, 10, 70, .6);*/
     

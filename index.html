@@ -6,14 +6,38 @@
         <title>Graham Earley</title>   
         <link rel="stylesheet" href="main.css">
         <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
-        <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+        <link rel="shortcut icon" type="image/png" href="/favicon.png"/> 
     </head>
     <body>
         
-        <div title="Photo taken in London by Graham Earley, 2015">
+        <div id="color-veil">
+        </div>
 
-            <div class="color-veil">
-            </div>
+        <script type="text/javascript">
+            veilColorsByPhotoName = { 
+                "img/bus.JPG":"rgba(255, 100, 50, .6)", 
+                "img/laxmi.JPG":"rgba(100, 10, 70, .6)", 
+            };
+            
+            var photos = Object.keys(veilColorsByPhotoName)
+            var indexRandom = Math.floor(Math.random() * photos.length);
+            
+            var photoRandom = photos[indexRandom]
+            var correspondingColor = veilColorsByPhotoName[photoRandom]
+                        
+            document.body.style.backgroundImage = "url("+photoRandom+")";
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundPosition = "center center";
+            document.body.style.backgroundAttachment = "fixed";
+            document.body.style.backgroundSize = "cover";
+            document.body.style.backgroundPositionX = "0";
+            document.body.style.backgroundPositionY = "0";            
+                        
+            document.getElementById("color-veil").style.backgroundColor = correspondingColor;
+        </script>
+
+        
+        <div title="Photo taken by Graham Earley">
 
             <div id="big-name">
                 <h1>Graham</h1>
