@@ -3,8 +3,7 @@
     
     <head>
         <meta charset="utf-8">
-        <meta name="theme-color" content="rgba(160, 195, 150, .4)">
-        
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
         <title>Graham Earley</title>   
         <link rel="stylesheet" href="main.css">
         <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
@@ -40,9 +39,8 @@
                         
             document.getElementById("color-veil").style.backgroundColor = correspondingColor;
             
-//             $('meta[name=theme-color]').remove();
-            //add the new one
-//            $('head').append('<meta name="theme-color" content="'+themeColor+'">');
+            // Update theme-color!
+            $('head').append('<meta name="theme-color" content="'+correspondingColor+'">');
         </script>
 
         
