@@ -60,7 +60,8 @@ a {
 .footer-nav a {
     text-align: center;
     float: left;
-    width: 50%;
+    width: 25%;
+    letter-spacing: 2px;
 }
 
 #color-veil {
