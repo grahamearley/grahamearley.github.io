@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Martel+Sans:300);
+@import url(https://fonts.googleapis.com/css?family=Dosis);
+
 html {
     -webkit-font-smoothing: antialiased;
    
@@ -14,7 +17,7 @@ html {
 }
 
 body {
-    font-family: "Avenir";
+    font-family: 'Martel Sans', sans-serif;
     overflow: hidden; /* no scrolling around off the screen */
     min-height:100%;
 }
