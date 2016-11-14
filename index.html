@@ -22,9 +22,21 @@
     </head>
     <body>
         
-        <div id="color-veil">
+        <div id="color-veil" title="Photo taken by Graham Earley"/>
+
+        <div id="big-name">
+            <h1>Graham</h1>
+            <h1>Patrick</h1>
+            <h1>Earley</h1>
         </div>
 
+        <div class="footer-nav">
+            <a href="/blog" id="ding">Blog</a>
+            <a href="http://www.soundcloud.com/grahamearley/tracks">Music</a>
+            <a href="http://www.reading.am/graham">Reading</a>
+            <a href="http://www.github.com/grahamearley">GitHub</a>
+        </div>
+                
         <script type="text/javascript">
             veilColorsByPhotoName = {
                 "/img/bus.JPG": "rgba(255, 100, 50, .6)", 
@@ -49,28 +61,11 @@
             document.body.style.backgroundPositionY = "0";            
                         
             document.getElementById("color-veil").style.backgroundColor = correspondingColor;
+            document.getElementsByClassName("footer-nav")[0].style.backgroundColor = correspondingColor;
             
             // Update theme-color!
             $('head').append('<meta name="theme-color" content="'+correspondingColor+'">');
         </script>
-
-        
-        <div title="Photo taken by Graham Earley">
-
-            <div id="big-name">
-                <h1>Graham</h1>
-                <h1>Patrick</h1>
-                <h1>Earley</h1>
-            </div>
-
-            <div class="footer-nav">
-                <a href="/blog">Blog</a>
-                <a href="http://www.soundcloud.com/grahamearley/tracks">Music</a>
-                <a href="http://www.reading.am/graham">Reading</a>
-                <a href="http://www.github.com/grahamearley">GitHub</a>
-            </div>
-        
-        </div>
 
     </body>
 </html>
