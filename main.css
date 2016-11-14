@@ -84,13 +84,13 @@ a {
     font-size: 12px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     h1 {
-        font-size: 11vw;
+        font-size: 15vw;
     }
     
     .footer-nav a {
-        font-size: 3vw
+        font-size: 4vw
     }
 }
 
