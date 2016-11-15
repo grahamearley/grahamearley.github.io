@@ -47,10 +47,10 @@
             };
             
             var photos = Object.keys(veilColorsByPhotoName)
-            var indexRandom = Math.floor(Math.random() * photos.length);
+            var photoIndex = Math.floor(Math.random() * photos.length);
             
-            var photoRandom = photos[indexRandom]
-            var correspondingColor = veilColorsByPhotoName[photoRandom]
+            var photoRandom = photos[photoIndex]
+            var veilColor = veilColorsByPhotoName[photoRandom]
                         
             document.body.style.backgroundImage = "url("+photoRandom+")";
             document.body.style.backgroundRepeat = "no-repeat";
@@ -60,11 +60,19 @@
             document.body.style.backgroundPositionX = "0";
             document.body.style.backgroundPositionY = "0";            
                         
-            document.getElementById("color-veil").style.backgroundColor = correspondingColor;
-            document.getElementsByClassName("footer-nav")[0].style.backgroundColor = correspondingColor;
+            document.getElementById("color-veil").style.backgroundColor = veilColor;
+            
+            // Set nav bar color to be corresponding color (but more opaque) #brittle
+            var navColors = ["rgba(255, 100, 50, .7)",
+                             "rgba(100, 10, 70, .7)",
+                             "rgba(230, 175, 50, .7)",
+                             "rgba(200, 100, 170, .7)",
+                             "rgba(160, 195, 150, .7)"]
+            var navColor = navColors[photoIndex];
+            document.getElementsByClassName("footer-nav")[0].style.backgroundColor = navColor;
             
             // Update theme-color!
-            $('head').append('<meta name="theme-color" content="'+correspondingColor+'">');
+            $('head').append('<meta name="theme-color" content="'+veilColor+'">');
         </script>
 
     </body>
