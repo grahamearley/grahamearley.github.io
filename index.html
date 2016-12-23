@@ -19,6 +19,22 @@
           ga('send', 'pageview');
 
         </script>
+        
+        <script>
+            /**
+            * Function that tracks a click on an outbound link in Analytics.
+            * This function takes a valid URL string as an argument, and uses that URL string
+            * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+            * using 'navigator.sendBeacon' in browser that support it.
+            */
+            var trackOutboundLink = function(url) {
+               ga('send', 'event', 'outbound', 'click', url, {
+                 'transport': 'beacon',
+                 'hitCallback': function(){document.location = url;}
+               });
+            }
+        </script>
+
     </head>
     <body>
         
@@ -31,10 +47,10 @@
         </div>
 
         <div class="footer-nav">
-            <a href="/blog" id="ding">Blog</a>
-            <a href="http://www.soundcloud.com/grahamearley/tracks">Music</a>
-            <a href="http://www.reading.am/graham">Reading</a>
-            <a href="http://www.github.com/grahamearley">GitHub</a>
+            <a href="/blog" onclick="trackOutboundLink('http://www.grahamearley.website/blog'); return false;">Blog</a>
+            <a href="http://www.soundcloud.com/grahamearley/tracks" onclick="trackOutboundLink('http://www.soundcloud.com/grahamearley/tracks'); return false;">Music</a>
+            <a href="http://www.reading.am/graham" onclick="trackOutboundLink('http://www.reading.am/graham'); return false;">Reading</a>
+            <a href="http://www.github.com/grahamearley" onclick="trackOutboundLink('http://www.github.com/grahamearley'); return false;">GitHub</a>
         </div>
                 
         <script type="text/javascript">
@@ -62,7 +78,7 @@
             document.body.style.backgroundAttachment = "fixed";
             document.body.style.backgroundSize = "cover";
             document.body.style.backgroundPositionX = "0";
-            document.body.style.backgroundPositionY = "0";            
+            document.body.style.backgroundPositionY = "0";
                         
             document.getElementById("color-veil").style.backgroundColor = veilColor;
             
@@ -82,6 +98,5 @@
             // Update theme-color!
             $('head').append('<meta name="theme-color" content="'+veilColor+'">');
         </script>
-
     </body>
 </html>

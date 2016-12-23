@@ -3,11 +3,6 @@
 
 html {
     -webkit-font-smoothing: antialiased;
-   
-/*    These will come in through javascript! :: */
-/*    background: url(img/laxmi.JPG) no-repeat center center fixed;*/
-/*    background: url(img/bus.JPG) no-repeat center center fixed;*/
-    
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
@@ -17,6 +12,11 @@ html {
 }
 
 body {
+    background: url(img/laxmi.JPG) no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
     font-family: 'Martel Sans', sans-serif;
     overflow: hidden; /* no scrolling around off the screen */
     min-height:100%;
