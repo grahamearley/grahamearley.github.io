@@ -41,7 +41,7 @@ a {
     line-height: 0.5;
     color: white;
     letter-spacing: 20px;
-    text-indent: 20px; /** <- to offset the letter-spacing, since it can mess up the center alignment! **/
+    padding-left: 20px; /** <- to offset the letter-spacing, since it can mess up the center alignment! **/
         
     /*  
     Center it in the page based on the middle
