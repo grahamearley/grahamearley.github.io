@@ -3,15 +3,15 @@
 
 .preload-images {
 	background: url(img/laxmi.JPG) no-repeat center center fixed;
-	background: background: url(img/laxmi.JPG) no-repeat center center fixed,
-        background: url(img/bus.JPG) no-repeat center center fixed,
-        background: url(img/hill.JPG) no-repeat center center fixed,
-        background: url(img/brick.JPG) no-repeat center center fixed,
-        background: url(img/pinky.JPG) no-repeat center center fixed,
-        background: url(img/roof.JPG) no-repeat center center fixed,
-        background: url(img/smoke.JPG) no-repeat center center fixed,
-        background: url(img/sunset.JPG) no-repeat center center fixed,
-        background: url(img/tree.JPG) no-repeat center center fixed;
+	background: url(img/laxmi.JPG) no-repeat center center fixed,
+                url(img/bus.JPG) no-repeat center center fixed,
+                url(img/hill.JPG) no-repeat center center fixed,
+                url(img/brick.JPG) no-repeat center center fixed,
+                url(img/pinky.JPG) no-repeat center center fixed,
+                url(img/roof.JPG) no-repeat center center fixed,
+                url(img/smoke.JPG) no-repeat center center fixed,
+                url(img/sunset.JPG) no-repeat center center fixed,
+                url(img/tree.JPG) no-repeat center center fixed;
 	}
 
 html {
