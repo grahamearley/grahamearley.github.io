@@ -40,7 +40,7 @@
     </head>
     <body>
         
-        <div id="color-veil" title="Photo taken by Graham Earley"/>
+        <div id="color-veil"/>
 
         <div id="big-name">
             <h1>Graham</h1>
@@ -51,7 +51,6 @@
         <div class="footer-nav">
             <a href="/blog">Blog</a>
             <a href="https://grahamearley.bandcamp.com/">Music</a>
-            <a href="http://www.reading.am/graham">Reading</a>
             <a href="http://www.github.com/grahamearley">GitHub</a>
         </div>
                 
@@ -59,13 +58,12 @@
             veilColorsByPhotoName = {
                 "/img/bus.JPG": "rgba(255, 100, 50, .6)", 
                 "/img/laxmi.JPG": "rgba(100, 10, 70, .6)",
-                "/img/hill.jpg": "rgba(230, 175, 50, .4)",
-                "/img/pinky.jpg": "rgba(200, 100, 170, .4)",
-                "/img/tree.jpg": "rgba(160, 195, 150, .4)",
-                "/img/brick.JPG": "rgba(0, 0, 0, .5)",
-                "/img/sunset.JPG": "rgba(127, 122, 226, .5)",
-                "/img/roof.JPG": "rgba(97, 0, 255, .3)",
-                "/img/smoke.JPG": "rgba(241, 198, 195, .5)"
+                "/img/hill.jpg": "rgba(230, 175, 50, .6)",
+                "/img/pinky.jpg": "rgba(200, 100, 170, .6)",
+                "/img/tree.jpg": "rgba(160, 195, 150, .6)",
+                "/img/brick.JPG": "rgba(0, 0, 0, .6)",
+                "/img/sunset.JPG": "rgba(127, 122, 226, .6)",
+                "/img/roof.JPG": "rgba(97, 0, 255, .6)",
             };
             
             var photos = Object.keys(veilColorsByPhotoName)
@@ -85,15 +83,14 @@
             document.getElementById("color-veil").style.backgroundColor = veilColor;
             
             // Set nav bar color to be corresponding color (but more opaque) #brittle
-            var navColors = ["rgba(255, 100, 50, .7)",
-                             "rgba(100, 10, 70, .7)",
-                             "rgba(230, 175, 50, .7)",
-                             "rgba(200, 100, 170, .7)",
-                             "rgba(160, 195, 150, .7)",
-                             "rgba(0, 0, 0, .7)",
-                             "rgba(127, 122, 226, .7)",
-                             "rgba(97, 0, 255, .4)",
-                             "rgba(241, 198, 195, .7)"]
+            var navColors = ["rgba(255, 100, 50, .8)",
+                             "rgba(100, 10, 70, .8)",
+                             "rgba(230, 175, 50, .8)",
+                             "rgba(200, 100, 170, .8)",
+                             "rgba(160, 195, 150, .8)",
+                             "rgba(0, 0, 0, .8)",
+                             "rgba(127, 122, 226, .8)",
+                             "rgba(97, 0, 255, .8)"]
             var navColor = navColors[photoIndex];
             document.getElementsByClassName("footer-nav")[0].style.backgroundColor = navColor;
             
